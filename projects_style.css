@@ -1,81 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@500&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-}
-
-body{
-    background: #fff;
-    height: 100vh;
-    display: grid;
-    place-items: center center;
-}
-
-::-webkit-scrollbar{
-    width: 15px;
-
-}
-
-::-webkit-scrollbar-track{
-    background: #d1e5ff;
-}
-
-::-webkit-scrollbar-thumb{
-    background: linear-gradient(135deg, rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
-}
-
-.header{
-    width: 100%; 
-    height: 100vh;
-    background-color: white;
-    padding: 0 7%;
-    
+    font-family: 'Rethink Sans', sans-serif;
 }
 
 nav{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
     align-items: center;
-}
-.btn {
-    transition: all 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #007bff;
-    color: #fff;
-}
-
-.btn:active {
-    transform: scale(0.95);
-}
-
-.active a {
-    text-decoration: none;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 2px;
-}
-
-.logo{
-    font-size: 24px;
-    font-weight: bold;
-    padding-left: 15px;
-}
-
-nav ul{
-    flex: 1;
-    text-align: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    z-index: 10;
 }
 
 nav ul li{
+    list-style-type: none;
     display: inline-block;
-    margin: 5px 10px;
+    margin: 10px 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav .logo{
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 15px;
+    cursor: pointer;
 }
 
 nav ul li a{
@@ -83,23 +39,10 @@ nav ul li a{
     color: black;
 }
 
-nav .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #6E57E0;
-    color: white; 
-    text-transform: none;
-    border: none;
-    padding: 10px 30px;
-    border-radius: 30px;
-    margin-right: 7%;
-    margin-top: 5px;
-    text-decoration: none; 
-}
-
-nav .btn i {
-    margin-right: 5px;
+.active a {
+    text-decoration: none;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 2px;
 }
 
 h1{
